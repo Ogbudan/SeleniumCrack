@@ -14,7 +14,7 @@ class InstCrack:
         self.password = password
         self.param = param
     def wait(self, delay = 0):
-        time.sleep(random.randint(1000,4000)/1000+delay)
+        time.sleep(random.randint(1000,4000)/1000+delay)#spec par
         # WebDriverWait(driver, 15).until(EC.presence_of_element_located([By.LINK_TEXT, "Сохранить данные"]))  ?????????? 
     def login(self):  
         self.driver.get("https://www.instagram.com/accounts/login/")
